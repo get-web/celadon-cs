@@ -13,3 +13,12 @@ Coming Soon page for octoberCMS
 
 ## Custom style example 1:
 ![example-1](https://github.com/get-web/celadon-cs/blob/main/assets/images/examples/example-1.jpg)
+
+## Custom style example 2:
+![example-2](https://github.com/get-web/celadon-cs/blob/main/assets/images/examples/example-2.jpg)
+
+## Custom style example 3:
+![example-3](https://github.com/get-web/celadon-cs/blob/main/assets/images/examples/example-3.jpg)
+
+## Custom style example 4:
+![example-4](https://github.com/get-web/celadon-cs/blob/main/assets/images/examples/example-4.jpg)
