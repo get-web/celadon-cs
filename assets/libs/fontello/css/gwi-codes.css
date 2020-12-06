@@ -1,0 +1,25 @@
+
+.gwi_videocam:before { content: '\e800'; } /* '' */
+.gwi_phone:before { content: '\e801'; } /* '' */
+.gwi_phone-1:before { content: '\e802'; } /* '' */
+.gwi_mail:before { content: '\e803'; } /* '' */
+.gwi_location:before { content: '\e804'; } /* '' */
+.gwi_credit-card:before { content: '\e805'; } /* '' */
+.gwi_ok-circled2-1:before { content: '\e806'; } /* '' */
+.gwi_right:before { content: '\e807'; } /* '' */
+.gwi_left:before { content: '\e808'; } /* '' */
+.gwi_calendar:before { content: '\e809'; } /* '' */
+.gwi_star-empty:before { content: '\e80a'; } /* '' */
+.gwi_star:before { content: '\e80b'; } /* '' */
+.gwi_clock:before { content: '\e80c'; } /* '' */
+.gwi_up:before { content: '\e80d'; } /* '' */
+.gwi_down:before { content: '\e80e'; } /* '' */
+.gwi_ok:before { content: '\e80f'; } /* '' */
+.gwi_paper-plane:before { content: '\f01d'; } /* '' */
+.gwi_facebook:before { content: '\f09a'; } /* '' */
+.gwi_doc-text:before { content: '\f0f6'; } /* '' */
+.gwi_instagram:before { content: '\f16d'; } /* '' */
+.gwi_vkontakte:before { content: '\f189'; } /* '' */
+.gwi_user-circle:before { content: '\f2bd'; } /* '' */
+.gwi_twitter:before { content: '\f309'; } /* '' */
+.gwi_skype:before { content: '\f339'; } /* '' */

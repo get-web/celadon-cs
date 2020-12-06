@@ -1,0 +1,15 @@
+title = "maintenance"
+url = "/maintenance"
+layout = "default"
+is_hidden = 0
+==
+<div class="maintenance">
+    <div class="maintenance__content">
+        <div class="maintenance__pic">
+            <img src="{% if this.theme.site__logo %}{{ this.theme.site__logo }}{% else %}{{ 'assets/images/logo.png'|theme }}{% endif %}" alt="logo">
+        </div>
+        <br>
+        <p><b>Technical work is underway</b></p>
+        <br>
+    </div>
+</div> <!-- END maintenance -->

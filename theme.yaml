@@ -1,0 +1,6 @@
+name: 'Celadon CS'
+description: 'Celadon CS - Coming Soon page for octoberCMS'
+author: 'Vitalii P.'
+homepage: 'https://get-web.site/'
+code: gws-celadon-cs
+form: config/fields.yaml

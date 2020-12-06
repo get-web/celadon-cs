@@ -1,0 +1,113 @@
+==
+<!DOCTYPE html>
+<html lang="{{ this.theme.site__locale }}">
+
+<head>
+    <title>{% if this.theme.site__title %}{{ this.theme.site__title }}{% else %}{{ this.page.title}}{% endif %}</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="author" content="Vitalii P. | get-web.site" />
+    <meta name="Description" content="{% if this.theme.site__description %}{{ this.theme.site__description }}{% else %}{{ this.page.description}}{% endif %}">
+    <meta name="Keywords" content="{{ this.theme.site__keywords }}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="{% if this.theme.site__favicon %}{{ this.theme.site__favicon }}{% else %}{{ 'assets/images/favicons/favicon.png'|theme }}{% endif %}">
+    <link rel="apple-touch-icon" sizes="152x152" href="{% if this.theme.site__favicon %}{{ this.theme.site__favicon.getThumb(152, 152, 'crop') }}{% else %}{{ 'assets/images/favicons/apple-touch-icon-152x152.png'|theme }}{% endif %}">
+    <link rel="apple-touch-icon" sizes="120x120" href="{% if this.theme.site__favicon %}{{ this.theme.site__favicon.getThumb(120, 120, 'crop') }}{% else %}{{ 'assets/images/favicons/apple-touch-icon-120x120.png'|theme }}{% endif %}">
+    <link rel="apple-touch-icon" sizes="76x76" href="{% if this.theme.site__favicon %}{{ this.theme.site__favicon.getThumb(76, 76, 'crop') }}{% else %}{{ 'assets/images/favicons/apple-touch-icon-76x76.png'|theme }}{% endif %}">
+    <link rel="apple-touch-icon" href="{% if this.theme.site__favicon %}{{ this.theme.site__favicon.getThumb(60, 60, 'crop') }}{% else %}{{ 'assets/images/favicons/apple-touch-icon.png'|theme }}{% endif %}">
+    <link rel="icon" href="{% if this.theme.site__favicon %}{{ this.theme.site__favicon.getThumb(60, 60, 'crop') }}{% else %}{{ 'assets/images/favicons/apple-touch-icon.png'|theme }}{% endif %}" type="image/x-icon">
+    {% if this.theme.og__type %}<meta property="og:type" content="{{ this.theme.og__type }}">{% endif %}
+    {% if this.theme.og__url %}<meta property="og:url" content="{{ this.theme.og__url }}">{% endif %}
+    {% if this.theme.og__title %}<meta property="og:title" content="{{ this.theme.og__title }}">{% endif %}
+    {% if this.theme.og__description %}<meta property="og:description" content="{{ this.theme.og__description }}">{% endif %}
+    {% if this.theme.og__sitename %}<meta property="og:site_name" content="{{ this.theme.og__sitename }}">{% endif %}
+    {% if this.theme.og__locale %}<meta property="og:locale" content="{{ this.theme.og__locale }}">{% endif %}
+    <meta property="og:image" content="{% if this.theme.og__image %}{{ this.theme.og__image.path }}{% else %}{{ 'assets/images/scl-img.jpg'|theme }}{% endif %}">
+    <!-- Next tags are optional but recommended -->
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <script>
+        const __config = {
+            gFonts: {
+                /* GOOGLE FONTS */
+                fonts: [
+                    'Roboto:300,400,500,700,900:latin,cyrillic',
+                    'Roboto Condensed:300,400:latin,cyrillic',
+                ],
+                delay: 500,
+            }
+        };
+    </script>
+
+    {% styles %}
+	<link rel="stylesheet" type="text/css" href="{{ [
+	'assets/libs/fontello/css/gwi.css',
+	'assets/css/style.css']
+	|theme }}">
+	
+	<style>
+	body {
+        {% if this.theme.styles__backgroundColor %}background-color: {{ this.theme.styles__backgroundColor }};{% endif %}
+        {% if this.theme.styles__textСolor %}color: {{ this.theme.styles__textСolor }};{% endif %}
+        {% if this.theme.styles__backgroundImage %}background-image: url({{ this.theme.styles__backgroundImage.path }});{% else %}background-image: none;{% endif %}
+	}
+	
+	{% if this.theme.styles__bgOverlayFPEnable and this.theme.styles__bgOverlayFP %}
+	.overlay {
+        background: radial-gradient(ellipse at center, rgba(255, 255, 255, 0), {{ this.theme.styles__bgOverlayFP }});
+	}{% endif %} 
+	
+	{% if this.theme.styles__сdСolorUnits %}
+	.gw-timer__desc {
+        color: {{ this.theme.styles__сdСolorUnits }};
+	}{% endif %} 
+	
+	{% if this.theme.styles__сdСolorNumbers %}
+	.countdown__counter {
+        color: {{ this.theme.styles__сdСolorNumbers }};
+	}{% endif %} 
+	
+	{% if this.theme.styles__bgOverlayСontentEnable and this.theme.styles__bgOverlayСontent %}
+	.countdown__overlay {
+        background-color: {{ this.theme.styles__bgOverlayСontent }};
+	}{% endif %} 
+	
+	{% if this.theme.styles__buttonTextColor %}
+	.btn {
+        color: {{ this.theme.styles__buttonTextColor }};
+	}{% endif %} 
+	
+	{% if this.theme.styles__buttonBG %}
+	.btn:after {
+        background-color: {{ this.theme.styles__buttonBG }};
+	}{% endif %}
+
+	</style>
+
+</head>
+
+<body class="body body-{{ this.page.id }}">
+
+    {% if this.theme.styles__bgOverlayFPEnable %}<div class="overlay"></div>{% endif %} 
+
+    {% page %}
+        
+
+    <script src="{{ [
+	'assets/libs/jquery/jquery-3.5.1.min.js',
+	'assets/libs/countdown/js/jquery.plugin.min.js',
+	'assets/libs/countdown/js/jquery.countdown.min.js',
+	'assets/js/app.js']
+	|theme }}"></script>
+    {% framework extras %}
+    {% scripts %}
+    
+
+
+</body>
+
+</html>
+
+<!-- 
+Copyright © Get-Web.Site
+Front-End Developer: Vitalii P. | Get-Web.Site
+ -->

@@ -1,0 +1,54 @@
+==
+<div class="countdown">
+    <div class="countdown__inner">
+        {% if this.theme.styles__bgOverlayСontentEnable %}<div class="countdown__overlay"></div>{% endif %} 
+        {% if this.theme.countdown__title %}<h2 class="countdown__title title title_large title_uppercase title_mb_small">{{ this.theme.countdown__title }}</h2>{% endif %}
+        {% if this.theme.countdown__desc %}<div class="countdown__desc desc desc_mb">{{ this.theme.countdown__desc }}</div>{% endif %}
+
+        {% if this.theme.countdown__enabled %}
+        <script>
+            __config.eDate = {
+                 init: true,
+                /* YODHMS format: years, months, days, hours, minutes, seconds */
+                format: '{{ this.theme.countdown__format }}',
+                expiryDate: "{{ this.theme.countdown__expiryDate|date('Y/m/d H:i:s') }}",
+                timeZone: "{{ this.theme.countdown__timeZone }}",
+                endTimeMSG: "{{ this.theme.countdown__endTimeMSG }}"
+            }
+        </script>
+        <div class="countdown__counter counter" data-counter-js></div>
+        {% endif %}
+        
+        {% if this.theme.countdown__buttonLink %}
+        <div class="countdown__btns">
+            <a href="{{ this.theme.countdown__buttonLink }}" class="btn btn_warning">
+                <div class="btn__content">{{ this.theme.countdown__button }}</div>
+            </a>
+        </div>
+        {% endif %}
+        
+        {% if this.theme.contacts__sclList %}
+            <div class="countdown__scl scl">
+                {% for scl in this.theme.contacts__sclList %}
+                <a href="{{ scl.link }}" class="scl__item">
+                    <span class="scl__gwi gwi gwi_{{ scl.name }}"></span>
+                </a>
+               {% endfor %}
+            </div>
+        {% endif %}
+
+        <div class="countdown__contacting-list">
+        {% if this.theme.contacts__email %}
+            <a href="mailto:{{ this.theme.contacts__email }}" class="countdown__contacting contacting">
+                <div class="contacting__content contacting__content_ml">{{ this.theme.contacts__email }}</div>
+            </a>
+            {% endif %}
+            {% if this.theme.contacts__phone %}
+            <a href="tel:+{{ this.theme.contacts__phone|replace({'+':'',' ':'','-':'','(':'',')':''}) }}" class="footer__contacting contacting">
+                <div class="countdown__contacting contacting__content_ml">{{ this.theme.contacts__phone }}</div>
+            </a>
+         {% endif %}
+        </div>
+
+    </div>
+</div> <!-- END  row -->
