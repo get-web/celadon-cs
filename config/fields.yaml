@@ -1,318 +1,317 @@
 tabs:
-  fields:
-    ### General
-    # Website Details
-    general_settings_section:
-      tab: General
-      label: Website Details
-      type: section
-    site__title:
-      tab: General
-      label: Title
-      type: text
-      span: left
-      default: Celadon CS - Coming Soon page for octoberCMS 
-      comment: Used at site title
-    site__description:
-      tab: General
-      label: Description
-      type: text
-      span: right
-      default: My new websites
-      comment: Used at site description
-    site__keywords:
-      tab: General
-      label: Keywords
-      type: text
-      span: left
-      default: My new websites
-      comment: Used at site keywords
-    site__locale:
-      tab: General
-      label: Locale
-      type: text
-      span: right
-      default: en
-      comment: Used for HTML lang parameter
-    site__favicon:
-      tab: General
-      label: Favicon
-      comment: PNG format. Size 152x152
-      type: fileupload
-      span: left
-      mode: image
-      fileTypes: png
-      imageWidth: 152
-      imageHeight: 152
-    site__logo:
-      tab: General
-      label: Logo
-      type: fileupload
-      span: right
-      mode: image
-      comment: Upload your logo
+    fields:
+        ### General
+        # Website Details
+        general_settings_section:
+            tab: General
+            label: Website Details
+            type: section
+        site__title:
+            tab: General
+            label: Title
+            type: text
+            span: left
+            default: Celadon CS - Coming Soon page for octoberCMS
+            comment: Used at site title
+        site__description:
+            tab: General
+            label: Description
+            type: text
+            span: right
+            default: My new websites
+            comment: Used at site description
+        site__keywords:
+            tab: General
+            label: Keywords
+            type: text
+            span: left
+            default: My new websites
+            comment: Used at site keywords
+        site__locale:
+            tab: General
+            label: Locale
+            type: text
+            span: right
+            default: en
+            comment: Used for HTML lang parameter
+        site__favicon:
+            tab: General
+            label: Favicon
+            comment: PNG format. Size 152x152
+            type: fileupload
+            span: left
+            mode: image
+            fileTypes: png
+            imageWidth: 152
+            imageHeight: 152
+        site__logo:
+            tab: General
+            label: Logo
+            type: fileupload
+            span: right
+            mode: image
+            comment: Upload your logo
 
-    ### Styles
-    # Colors
-    styles_colors_section:
-      tab: Styles
-      label: Colors
-      type: section
-    styles__backgroundColor:
-      tab: Styles
-      label: Background color
-      type: colorpicker
-    styles__textСolor:
-      tab: Styles
-      label: Main text color
-      type: colorpicker
-    # Сountdown
-    general_countdown_section:
-      tab: Styles
-      label: Сountdown
-      type: section
-    styles__сdСolorNumbers:
-      tab: Styles
-      label: The color of the countdown numbers
-      type: colorpicker
-    styles__сdСolorUnits:
-      tab: Styles
-      label: Color of time units (opacity 40%)
-      type: colorpicker
-    # Button
-    general_button_section:
-      tab: Styles
-      label: Button
-      type: section
-    styles__buttonBG:
-      tab: Styles
-      label: The background color of the button
-      type: colorpicker
-    styles__buttonTextColor:
-      tab: Styles
-      label: The color of the button text
-      type: colorpicker
-    # bgOverlayСontent
-    general_bgOverlayСontent_section:
-      tab: Styles
-      label: Background overlay for content
-      type: section
-    styles__bgOverlayСontentEnable:
-      tab: Styles
-      label: Enable
-      type: switch
-      default: false
-    styles__bgOverlayСontent:
-      tab: Styles
-      label: Color (opacity 30%)
-      type: colorpicker
-    # bgOverlayPage
-    general_bgOverlayFP_section:
-      tab: Styles
-      label: Background overlay for full page
-      type: section
-    styles__bgOverlayFPEnable:
-      tab: Styles
-      label: Enable
-      type: switch
-      default: true
-    styles__bgOverlayFP:
-      tab: Styles
-      label: Color
-      type: colorpicker
-    # Images
-    general_images_section:
-      tab: Styles
-      label: Images
-      type: section
-    styles__backgroundImage:
-      tab: Styles
-      label: Background image
-      comment: Recommended image size 1920x1080 or higher
-      type: fileupload
-      mode: image
+        ### Styles
+        # Colors
+        styles_colors_section:
+            tab: Styles
+            label: Colors
+            type: section
+        styles__backgroundColor:
+            tab: Styles
+            label: Background color
+            type: colorpicker
+        styles__textСolor:
+            tab: Styles
+            label: Main text color
+            type: colorpicker
+        # Сountdown
+        general_countdown_section:
+            tab: Styles
+            label: Сountdown
+            type: section
+        styles__сdСolorNumbers:
+            tab: Styles
+            label: The color of the countdown numbers
+            type: colorpicker
+        styles__сdСolorUnits:
+            tab: Styles
+            label: Color of time units (opacity 40%)
+            type: colorpicker
+        # Button
+        general_button_section:
+            tab: Styles
+            label: Button
+            type: section
+        styles__buttonBG:
+            tab: Styles
+            label: The background color of the button
+            type: colorpicker
+        styles__buttonTextColor:
+            tab: Styles
+            label: The color of the button text
+            type: colorpicker
+        # bgOverlayСontent
+        general_bgOverlayСontent_section:
+            tab: Styles
+            label: Background overlay for content
+            type: section
+        styles__bgOverlayСontentEnable:
+            tab: Styles
+            label: Enable
+            type: switch
+            default: false
+        styles__bgOverlayСontent:
+            tab: Styles
+            label: Color (opacity 30%)
+            type: colorpicker
+        # bgOverlayPage
+        general_bgOverlayFP_section:
+            tab: Styles
+            label: Background overlay for full page
+            type: section
+        styles__bgOverlayFPEnable:
+            tab: Styles
+            label: Enable
+            type: switch
+            default: true
+        styles__bgOverlayFP:
+            tab: Styles
+            label: Color
+            type: colorpicker
+        # Images
+        general_images_section:
+            tab: Styles
+            label: Images
+            type: section
+        styles__backgroundImage:
+            tab: Styles
+            label: Background image
+            comment: Recommended image size 1920x1080 or higher
+            type: fileupload
+            mode: image
 
-    # Open Graph
-    general_og_section:
-      tab: Open Graph
-      label: Open Graph
-      type: section
-    og__type:
-      tab: Open Graph
-      span: left
-      label: Select type
-      type: dropdown
-      showSearch: false
-      default: website
-      options:
-        website: website
-        article: article
-        book: book
-        profile: profile
-    og__url:
-      tab: Open Graph
-      label: Url
-      type: text
-      span: right
-    og__title:
-      tab: Open Graph
-      label: Title
-      type: text
-      span: left
-      default: Celadon CS - Coming Soon page for octoberCMS  
-    og__description:
-      tab: Open Graph
-      label: Description
-      type: text
-      span: right
-    og__sitename:
-      tab: Open Graph
-      label: Site Name
-      type: text
-      span: left
-    og__locale:
-      tab: Open Graph
-      label: Locale
-      type: text
-      span: right
-      default: en_US
-    og__image:
-      tab: Open Graph
-      label: Image
-      comment: Size 1200x630
-      type: fileupload
-      span: left
-      mode: image
-
-    #Coming Soon
-    countdown__title:
-      tab: Coming Soon
-      label: Title
-      type: text
-      default: "Coming Soon"
-    countdown__desc:
-      tab: Coming Soon
-      label: Description
-      type: text
-      default: "Celadon CS - Coming Soon page for octoberCMS"
-    countdown__button:
-      tab: Coming Soon
-      label: Button
-      type: text
-      default: Go to the website
-      span: left
-      comment: Leave empty for hiding button
-    countdown__buttonLink:
-      tab: Coming Soon
-      label: Button link
-      type: text
-      default: "https://get-web.site/"
-      span: right
-      comment: Leave empty for hiding button
-    countdown_settings_section:
-      tab: Coming Soon
-      label: Countdown configuration
-      type: section
-    countdown__enabled:
-      tab: Coming Soon
-      label: Enable countdown
-      span: left
-      type: switch
-      default: true
-      span: left
-    countdown__expiryDate:
-      tab: Coming Soon
-      label: Expiry date
-      type: datepicker
-      mode: datetime
-      default: "2029-08-20"
-    countdown__format:
-      tab: Coming Soon
-      span: left
-      label: Format
-      type: text
-      default: "DHMS"
-      comment: "YODHMS format: years, months, days, hours, minutes, seconds"
-    countdown__timeZone:
-      tab: Coming Soon
-      span: right
-      label: Select time zone (UTC)
-      type: dropdown
-      showSearch: false
-      default: "+3"
-      options:
-        "-12": "-12"
-        "-11": "-11"
-        "-10": "-10"
-        "-9": "-9"
-        "-8": "-8"
-        "-7": "-7"
-        "-6": "-6"
-        "-5": "-5"
-        "-4": "-4"
-        "-3": "-3"
-        "-2": "-2"
-        "-1": "-1"
-        "0": "0"
-        "+1": "+1"
-        "+2": "+2"
-        "+3": "+3"
-        "+4": "+4"
-        "+5": "+5"
-        "+6": "+6"
-        "+7": "+7"
-        "+8": "+8"
-        "+9": "+9"
-        "+10": "+10"
-        "+11": "11+"
-        "+12": "12+"
-        "+13": "13+"
-        "+14": "14+"
-    countdown__endTimeMSG:
-      tab: Coming Soon
-      label: Message
-      type: text
-      default: "Time's up"
-      comment: "Message after the countdown ends"
-
-    #Contacts
-    contacts_first_section:
-      tab: Contacts
-      label: Contacts
-      type: section
-    contacts__phone:
-      tab: Contacts
-      label: Phone
-      type: text
-      span: full
-      default: +0 (000) 000-00-00
-    contacts__email:
-      tab: Contacts
-      label: E-mail
-      type: text
-      span: full
-      default: getwebdev@protonmail.com
-    contacts_scl_section:
-      tab: Contacts
-      label: Social network
-      type: section
-    contacts__sclList:
-      tab: Contacts
-      type: repeater
-      form:
-        fields:
-          name:
-            label: Select a social network
+        # Open Graph
+        general_og_section:
+            tab: Open Graph
+            label: Open Graph
+            type: section
+        og__type:
+            tab: Open Graph
+            span: left
+            label: Select type
             type: dropdown
+            showSearch: false
+            default: website
             options:
-              "vkontakte": "Vkontakte"
-              "facebook": "Facebook"
-              "instagram": "Instagram"
-              "twitter": "Twitter"
-              "paper-plane": "Telegram"
-              "skype": "Skype"
-              "mail": "Mail"
-          link:
-            label: Link
+                website: website
+                article: article
+                book: book
+                profile: profile
+        og__url:
+            tab: Open Graph
+            label: Url
+            type: text
+            span: right
+        og__title:
+            tab: Open Graph
+            label: Title
+            type: text
+            span: left
+            default: Celadon CS - Coming Soon page for octoberCMS
+        og__description:
+            tab: Open Graph
+            label: Description
+            type: text
+            span: right
+        og__sitename:
+            tab: Open Graph
+            label: Site Name
+            type: text
+            span: left
+        og__locale:
+            tab: Open Graph
+            label: Locale
+            type: text
+            span: right
+            default: en_US
+        og__image:
+            tab: Open Graph
+            label: Image
+            comment: Size 1200x630
+            type: fileupload
+            span: left
+            mode: image
+
+        #Coming Soon
+        countdown__title:
+            tab: Coming Soon
+            label: Title
+            type: text
+            default: "Coming Soon"
+        countdown__desc:
+            tab: Coming Soon
+            label: Description
+            type: text
+            default: "Celadon CS - Coming Soon page for octoberCMS"
+        countdown__button:
+            tab: Coming Soon
+            label: Button
+            type: text
+            default: Go to the website
+            span: left
+            comment: Leave empty for hiding button
+        countdown__buttonLink:
+            tab: Coming Soon
+            label: Button link
+            type: text
+            default: "https://get-web.site/"
+            span: right
+            comment: Leave empty for hiding button
+        countdown_settings_section:
+            tab: Coming Soon
+            label: Countdown configuration
+            type: section
+        countdown__enabled:
+            tab: Coming Soon
+            label: Enable countdown
+            span: left
+            type: switch
+            default: true
+        countdown__expiryDate:
+            tab: Coming Soon
+            label: Expiry date
+            type: datepicker
+            mode: datetime
+            default: "2029-08-20"
+        countdown__format:
+            tab: Coming Soon
+            span: left
+            label: Format
+            type: text
+            default: "DHMS"
+            comment: "YODHMS format: years, months, days, hours, minutes, seconds"
+        countdown__timeZone:
+            tab: Coming Soon
+            span: right
+            label: Select time zone (UTC)
+            type: dropdown
+            showSearch: false
+            default: "+3"
+            options:
+                "-12": "-12"
+                "-11": "-11"
+                "-10": "-10"
+                "-9": "-9"
+                "-8": "-8"
+                "-7": "-7"
+                "-6": "-6"
+                "-5": "-5"
+                "-4": "-4"
+                "-3": "-3"
+                "-2": "-2"
+                "-1": "-1"
+                "0": "0"
+                "+1": "+1"
+                "+2": "+2"
+                "+3": "+3"
+                "+4": "+4"
+                "+5": "+5"
+                "+6": "+6"
+                "+7": "+7"
+                "+8": "+8"
+                "+9": "+9"
+                "+10": "+10"
+                "+11": "11+"
+                "+12": "12+"
+                "+13": "13+"
+                "+14": "14+"
+        countdown__endTimeMSG:
+            tab: Coming Soon
+            label: Message
+            type: text
+            default: "Time's up"
+            comment: "Message after the countdown ends"
+
+        #Contacts
+        contacts_first_section:
+            tab: Contacts
+            label: Contacts
+            type: section
+        contacts__phone:
+            tab: Contacts
+            label: Phone
             type: text
             span: full
+            default: +0 (000) 000-00-00
+        contacts__email:
+            tab: Contacts
+            label: E-mail
+            type: text
+            span: full
+            default: getwebdev@protonmail.com
+        contacts_scl_section:
+            tab: Contacts
+            label: Social network
+            type: section
+        contacts__sclList:
+            tab: Contacts
+            type: repeater
+            form:
+                fields:
+                    name:
+                        label: Select a social network
+                        type: dropdown
+                        options:
+                            "vkontakte": "Vkontakte"
+                            "facebook": "Facebook"
+                            "instagram": "Instagram"
+                            "twitter": "Twitter"
+                            "paper-plane": "Telegram"
+                            "skype": "Skype"
+                            "mail": "Mail"
+                    link:
+                        label: Link
+                        type: text
+                        span: full
